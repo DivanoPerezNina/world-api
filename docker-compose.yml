@@ -6,7 +6,7 @@ services:
       - "8080:8080"
     environment:
       # Aquí pondremos la IP de tu servidor y el puerto donde ya corre tu MySQL
-      SPRING_DATASOURCE_URL: jdbc:mysql://192.168.18.36:3306/world?useSSL=false&serverTimezone=UTC
+      SPRING_DATASOURCE_URL: jdbc:mysql://192.168.18.36:3306/world?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: devpassword
       # IMPORTANTE: En producción usamos 'none' o 'validate', nunca 'update' para no romper tu BD
